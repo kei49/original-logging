@@ -9,9 +9,9 @@ parser.add_argument('-m', required=True, help='Content of logs(memos)')
 args = parser.parse_args()
 
 def lo():
-    today = date.today().strftime('%Y%m%d')
+    month = date.today().strftime('%Y%m')
     home_dir = os.path.expanduser('~')
-    filename = home_dir + '/.log/life/' + today + '.log'
+    filename = home_dir + '/.log/life/' + month + '.log'
     logging.basicConfig(filename=filename, format='%(asctime)s %(message)s', level=logging.INFO)
     logging.info(args.m)
     
