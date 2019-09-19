@@ -1,2 +1,2 @@
 # original-logging
-Make better logging system
+Make better logging system for improving QOL
